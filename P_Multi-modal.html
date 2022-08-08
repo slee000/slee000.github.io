@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sudong Lee - Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/S_Lee.jpg" alt="" /></span>
+					<h1 id="logo"><a href="index.html">Sudong Lee</a></h1>
+					<p>M.S. in Mechanical Engineering,<br />
+					Seoul National University</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#publications">Publications</a></li>
+						<li><a href="index.html#projects" class="active">Projects</a></li>
+						<li><a href="index.html#skills">Skills</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://slee000.github.io/" class="icon brands fa-firefox-browser"><span class="label">Hamepage</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=OreDuWEAAAAJ" class="icon brands fa-google"><span class="label">GoogleScholar</span></a></li>
+						<li><a href="https://orcid.org/0000-0002-8928-6070" class="icon brands fa-orcid"><span class="label">Orcid</span></a></li>												
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project -->
+							<section id="project">
+								<div class="image main" data-position="center">
+									<img src="images/banner.jpg" alt="" />
+								</div>
+								<div class="container">
+								    <a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+									
+									<h2>Multi-modal Locomotion and Environmental Adaptability of Legged Robots using Soft Inflatable Sensing Skin</h2>
+									<br />
+									<h5><u><em>Prepared to submit.</em></u></h5>
+									<br />
+									
+									<p><div><span class="image fit"><img src="images/Multi-modal_01.jpg" alt="" />
+									<sup><b>Figure 01.</b> Concept of soft inflatable sensing skin integrated with a legged robot. (Image source: <a href="https://doi.org/10.1109/ROBOSOFT.2019.8722711">Prior research</a>)</sup></span></div></p>
+									
+									<p> a</p>
+									
+									<p>I set up quadruped robot systems using commercial and custom-designed quadruped robots. The commercial quadruped robot included three additional subsystems (air supply system, sensing system, and an external control system).
+									The air supply system and the sensing system were the same as those of the custom-built quadruped robot system with libraries (1), (2).
+									The control system consisted of a leader personal computer (PC), a follower single board computer (SBC), a follower microcontroller unit (MCU), and a router.
+									The leader PC received fabric-based touch sensor data and air pressure sensor data using user datagram protocol (UDP) communication (via wireless fidelity (Wi-Fi)).
+									The leader PC used robot operating system (ROS) to control the commercial quadruped robot and obtained inertial measurement unit (IMU) data, body state data, and position data of motors.
+									Furthermore, the PC received the operators’ order, determined the sensor states, sent commands to the follower MCU, and saved data to the system log.
+									The follower SBC collected data from fabric sensors and air pressure sensors and sent these to the leader PC.
+									The follower MCU controlled the air supply system according to the commands from the leader PC.</p>
+									
+									<p><div><span class="image fit"><img src="images/Multi-modal_02.jpg" alt="" />
+									<sup><b>Figure 02.</b> Control system of the commercial quadruped robot.</sup></span></div></p>
+									
+									<p>The custom-designed quadruped robot was fabricated with servo motors and 3D-printed parts to demonstrate the various uses of the inflatable skin effectively.
+									The robot system was configured as an embedded system to operate robustly in a completely untethered condition without software collision between subsystems.
+									The robot contains four subsystems: control system, air supply system, motor system, and sensing system.
+									The control system was composed of a leader controller (SBC) and a follower controller (MCU).
+									The leader controller communicated with an external PC via a router using Wi-Fi to receive main commands and transmit system states to the operator.
+									Upon receiving commands, the leader controller calculated desired motor configurations and transmitted them to the servo motors.
+									The leader controller also received all sensor data from fabric-based touch sensors and air pressure sensors, determined the sensor states, and saved them to the system log.
+									The follower controller accepted orders of the leader controller to operate the air supply system.
+									The air supply system was composed of four MOSFETs, an air pump, and three solenoid valves.
+									The MOSFETs were controlled by the follower controller to regulate the air pump and solenoid valves.
+									The motor system consisted of two communicators and 12 motors.
+									The communicator received the motor position command and transmitted it to the motor controller to move the motor to the desired positions by using libraries (3).
+									The sensing system included a total of 31 sensing units (27 sensors and four air pressure sensors) and eight analog-to-digital converters (ADCs).
+									All the sensing units were connected to the ADCs, which then transmitted the digital data to the leader controller using the serial peripheral interface (SPI) protocol.</p>
+									
+									<p><div><span class="image fit"><img src="images/Multi-modal_03.jpg" alt="" />
+									<sup><b>Figure 03.</b> Control system of the custom-bulit quadruped robot.</sup></span></div></p>
+									
+									<p><sup>(1) github.com/unitreerobotics/laikago_ros<br />
+									(2) github.com/Ryangupta8/laikago_sdk<br />
+									(3) github.com/ROBOTIS-GIT/DynamixelSDK</sup></p>
+									
+									<a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+									<a href="#project" class="button alt icon solid fa-angle-double-up">Top</a>		
+								</div>
+							</section>			
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Copyright 2022. Sudong Lee. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
