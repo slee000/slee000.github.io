@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sudong Lee - Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/S_Lee.jpg" alt="" /></span>
+					<h1 id="logo"><a href="index.html">Sudong Lee</a></h1>
+					<p>M.S. in Mechanical Engineering,<br />
+					Seoul National University</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#publications">Publications</a></li>
+						<li><a href="index.html#projects" class="active">Projects</a></li>
+						<li><a href="index.html#skills">Skills</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://slee000.github.io/" class="icon brands fa-firefox-browser"><span class="label">Homepage</span></a></li>
+						<li><a href="https://www.linkedin.com/in/slee0" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=OreDuWEAAAAJ" class="icon brands fa-google"><span class="label">GoogleScholar</span></a></li>
+						<li><a href="https://orcid.org/0000-0002-8928-6070" class="icon brands fa-orcid"><span class="label">Orcid</span></a></li>						
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project -->
+							<section id="project">
+								<div class="image main" data-position="center">
+									<img src="images/banner.jpg" alt="" />
+								</div>
+								<div class="container">
+								    <a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+									
+									<h2>Modularized Robotic Skin Sensorized by Fiber Optic Force Sensing for Remote and Autonomous Robot Operation</h2>
+									<br />
+									<h5><u><a href="https://s-space.snu.ac.kr/handle/10371/178146"><em>Thesis, 2021.</em></a><br />
+									<em>Prepared to submit.</em></u></h5>
+									<br />
+									
+									<p><div><span class="image fit"><img src="images/Modularized_01.jpg" alt="" />
+									<sup><b>Figure 01.</b> (<u>Left</u>) Conceptual drawing of modularized robotic skin composed of a skin cover and a sensing structure hidden under the cover.
+									(<u>Right</u>) Industrial robot arm covered by multiple skin modules that form cylindrical skin.</sup></span></div></p>									
+									
+									<p> I configured teleoperation and autonomous systems to demonstrated usability of the proposed robotic skin that estimates the locations and the magnitude of external forces.
+									By using teleoperation system, the operator controlled the position of a commercial robotic arm while avoiding obstacles with haptic feedbacks when the robotic skin on the robotic arm contacts objects.
+									In the autonomous system, the robotic arm also found the path with obstacle avoidance and controlled the contact force with environments using external force information by the robotic skin.</p>
+									
+									<p>In these systems, the robotic skin was mounted on a robotic arm that was controlled by a haptic device or autonomously.
+									The systems for applications were composed of four parts: robotic skin, a haptic device, a robot arm, and a main controller.
+									The robotic skin signals were received by the “sensor data processing” program using Python of the main controller through the interrogator.
+									The program estimated the magnitude and location of external forces and published the results to robot operating system (ROS).
+									The “robot arm and haptic device control” program using Python calculated and transmitted the magnitude and direction of force feedback.
+									The magnitude was scaled linearly with respect to the magnitude of the external forces.
+									The direction was the same as the external force's direction with respect to the center of the robot skin to guide the operator to avoid the robot arm from the external forces.
+									The haptic device generated force feedback based on commands of the second computer and sent the tip position to the second computer.
+									This “robot arm and haptic device control” program also calculated and transmitted the robot arm’s end-effector velocity with libraries (1).
+									In order to increase the stability of the robot arm control, the distance and the direction from the origin of the haptic device tip matched with the speed and the velocity direction of the robot arm's end-effector, respectively.
+									The operator could check not only the magnitude and location of external forces but also the current position and path of the robot arm and the position from the origin of the haptic device tip through a screen in real-time.
+									This information was visualized by MATLAB.
+									In the case of the autonomous robot control application, the haptic device was excluded from the system.</p>
+									
+									<p><div><span class="image fit"><img src="images/Modularized_02.jpg" alt="" />
+									<sup><b>Figure 02.</b> System configuration and data flow.</sup></span></div></p>
+									
+									<p><sup>(1) github.com/UniversalRobots/Universal_Robots_ROS_Driver</sup></p>
+									
+									<a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+									<a href="#project" class="button alt icon solid fa-angle-double-up">Top</a>		
+								</div>
+							</section>			
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Copyright 2022. Sudong Lee. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

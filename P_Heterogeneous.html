@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sudong Lee - Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/S_Lee.jpg" alt="" /></span>
+					<h1 id="logo"><a href="index.html">Sudong Lee</a></h1>
+					<p>M.S. in Mechanical Engineering,<br />
+					Seoul National University</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#publications">Publications</a></li>
+						<li><a href="index.html#projects" class="active">Projects</a></li>
+						<li><a href="index.html#skills">Skills</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://slee000.github.io/" class="icon brands fa-firefox-browser"><span class="label">Homepage</span></a></li>
+						<li><a href="https://www.linkedin.com/in/slee0" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=OreDuWEAAAAJ" class="icon brands fa-google"><span class="label">GoogleScholar</span></a></li>
+						<li><a href="https://orcid.org/0000-0002-8928-6070" class="icon brands fa-orcid"><span class="label">Orcid</span></a></li>												
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project -->
+							<section id="project">
+								<div class="image main" data-position="center">
+									<img src="images/banner.jpg" alt="" />
+								</div>
+								<div class="container">
+								    <a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+								
+									<h2>Heterogeneous Sensing in a Multifunctional Soft Sensor for Human-Robot Interface</h2>
+									<br />
+									<h5><u><a href="https://doi.org/10.1126/scirobotics.abc6878"><em>Science Robotics, 2020.</em></a></u></h5>
+									<br />
+									
+									<div class="video-container"><iframe width="1920" height="1080" src="https://www.youtube.com/embed/PgAEY9_7gzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br/>
+									
+									<p>I implemented the post-processing of three different sensing data and configured systems for human-robot interactions (HRI) applications.
+									I processed the collected data different types of sensor signals from heterogeneous sensing mechanisms combined in a single structure, such as optical, microfluidic, and piezoresistive sensing.
+									I developed an algorithm for estimating different types of physical stimuli by processing the sensor signals and constructed a real-time signal processing system based on a machine learning technique by using Python with TensorFlow.
+									The estimation results were also visualized for the operator's intuitive perception of the sensor states by using MATLAB.
+									Since the proposed sensor can estimate human joint motions such as wrist and elbow, we demonstrated the HRI applications using human motion tracking.
+									For the applications, I worked on integrating different types of commercial systems, including a simple robotic arm, an industrial robotic arm, and a small uncrewed aerial vehicle (sUAV), with the proposed sensor system using libraries (1), (2), (3-1~4).
+									The embedded systems with a microcontroller unit (MCU) collected sensor signals and sent sensor data to the leader controllers (single board computer (SBC) or laptop) in all applications.
+									The leader controllers conducted post-processing with the logical algorithm or machine learning-based method by using Python and controlled the robotic arms and sUAV.</p>
+									
+									<p><div><span class="image fit"><img src="images/Heterogeneous_01.jpg" alt="" />
+									<sup><b>Figure 01.</b> (<u>A</u>) Soft sensor design with key components for three different sensing elements.
+									(<u>B</u>) Soft optical waveguide composed of elastomer cladding and liquid core of room-temperature ionic liquid (RTIL).
+									(<u>C</u>) Conductive fabric layer laminated to the waveguide.
+									(<u>D</u>) Final prototype of the proposed soft sensor. </sup></span></div></p>
+									
+									<p><div><span class="image fit"><img src="images/Heterogeneous_02.jpg" alt="" />
+									<sup><b>Figure 02.</b> System configurations (<u>Left</u>) for manipulation of the robotic arm with a gripper by the wrist motions.
+									(<u>Right</u>) for control of the small-size uncrewed aerial vehicle by the wrist motions.</sup></span></div></p>
+									
+									<p><div><span class="image fit"><img src="images/Heterogeneous_03.jpg" alt="" />
+									<sup><b>Figure 03.</b> A system configuration for control of the commercial robotic arm (UR5e) by the elbow motion.</sup></span></div></p>
+									
+									<h4>Videos</h4>									
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s4.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s5.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s6.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s7.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s8.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />
+									<div class="video-container"><iframe width="720" height="480" src="videos/abc6878_movie_s9.mp4"  frameborder="0" controls allowfullscreen alt=""></iframe></div><br />									
+									
+									<p><sup>(1) pypi.org/project/e-drone/<br />
+									(2) github.com/UniversalRobots/Universal_Robots_ROS_Driver<br />
+									(3-1) github.com/ROBOTIS-GIT/open_manipulator<br />
+									(3-2) github.com/ROBOTIS-GIT/open_manipulator_msgs<br />
+									(3-3) github.com/ROBOTIS-GIT/open_manipulator_simulations<br />
+									(3-4) github.com/ROBOTIS-GIT/open_manipulator_dependencies</sup></p>
+									
+									<a href="index.html#projects" class="button icon solid fa-angle-double-left">Back</a>
+									<a href="#project" class="button alt icon solid fa-angle-double-up">Top</a>		
+								</div>
+							</section>			
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Copyright 2022. Sudong Lee. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
